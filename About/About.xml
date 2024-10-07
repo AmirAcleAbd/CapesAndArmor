@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Capes and Armor</name>
+	<author>Yyobov</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>Harkon.DF.Dusk</li>
+		<li>CaptainCrunch.CrunchArmorTweaks</li>
+	</loadAfter>
+	<packageId>Yy.CapesArmor</packageId>
+	<description>You can equip cloaks and capes above power armor</description>
+</ModMetaData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_Cape"]/apparel/layers</xpath>
+    <value>
+      <layers>
+        <li>Cape</li>
+        <li>Armor_Cape</li>
+      </layers>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_Cape"]/apparel/canBeGeneratedToSatisfyWarmth</xpath>
+    <value>
+      <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractBase"]/apparel/layers</xpath>
+    <value>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+        <li>Cape</li>
+      </layers>
+    </value>
+  </Operation>
+
+
+</Patch>
+
+

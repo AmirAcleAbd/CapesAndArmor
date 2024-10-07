@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ApparelLayerDef>
+		<defName>Cape</defName>
+		<label>cape</label>
+		<drawOrder>305</drawOrder>
+	</ApparelLayerDef>
+
+	<ApparelLayerDef>
+		<defName>Armor_Cape</defName>
+		<label>cloak</label>
+		<drawOrder>505</drawOrder>
+	</ApparelLayerDef>
+</Defs>
