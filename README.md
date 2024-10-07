@@ -4,7 +4,10 @@ It never made sense that you had to choose between a cape and marine armor.
 Now you don't.
 
 You can equip cloaks and capes above power armor.  
-Cataphract armor has its own fitted cape for a snugger look.
+
+Heavy power armor have their own fitted capes
+
+Total 6 new + original
 
 ---
 
