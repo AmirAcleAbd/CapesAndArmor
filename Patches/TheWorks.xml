@@ -105,6 +105,15 @@
         </li>
 
         <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Apparel_CrownStellic"]/apparel/layers</xpath>
+          <value>
+            <layers>
+              <li>EyeCover</li>
+            </layers>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Apparel_Coronet"]/apparel/layers</xpath>
           <value>
             <layers>
