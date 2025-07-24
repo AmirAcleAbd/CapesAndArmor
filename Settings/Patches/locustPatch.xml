@@ -11,14 +11,19 @@
             <attribute>MayRequireAnyOf</attribute>
             <value>yy.DNE</value>
         </Operation>
-        <Operation Class="PatchOperationAdd" IfModActive="Ludeon.Rimworld.Royalty">
-            <xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]/apparel</xpath>
-            <value>
-                <layers>
-                    <li>Cape</li>
-                    <li>Armor_Cape</li>
-                </layers>
-            </value>
+        <Operation Class="PatchOperationFindMod">
+            <mods>
+            <li>Royalty</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Apparel_ArmorLocust"]/apparel</xpath>
+                <value>
+                    <layers>
+                        <li>Cape</li>
+                        <li>Armor_Cape</li>
+                    </layers>
+                </value>
+            </match>
         </Operation>
       </caseFalse>
     </Operation>

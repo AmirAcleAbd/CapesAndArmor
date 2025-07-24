@@ -1,24 +1,47 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/apparel/layers</xpath>
-      <value>
-        <layers>
-          <li>Cape</li>
-          <li>Armor_Cape</li>
-        </layers>
-      </value>
-    </Operation>
+  <Operation Class="PatchOperationFindMod" > 
+      <mods>
+        <li>XML Extensions</li>
+      </mods>
+      <match Class="XmlExtensions.OptionalPatch">
+        <modId>Yy.CapesandArmor</modId>
+        <key>HoodToggle</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="DMS_Apparel_StealthMask"]/apparel/bodyPartGroups</xpath>
+                <value>
+                <bodyPartGroups>
+                    <li>Mouth</li>
+                </bodyPartGroups>
+                </value>
+            </Operation>
+        </caseTrue>
+      </match>
+      <nomatch Class="PatchOperationSequence" >
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+              </layers>
+            </value>
+          </li>
 
-    <Operation Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/apparel</xpath>
-      <value>
-        <drawData>
-          <dataNorth>
-            <layer>90</layer>
-          </dataNorth>
-        </drawData>
-      </value>
-    </Operation>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="DMS_Apparel_TacticalCloak"]/apparel</xpath>
+            <value>
+              <drawData>
+                <dataNorth>
+                  <layer>90</layer>
+                </dataNorth>
+              </drawData>
+            </value>
+          </li>
+        </operations>
+      </nomatch>
+  </Operation>
 </Patch>

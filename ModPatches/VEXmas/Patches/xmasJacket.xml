@@ -6,23 +6,22 @@
       </mods>
       <match Class="XmlExtensions.OptionalPatch">
         <modId>Yy.CapesandArmor</modId>
-        <key>HoodToggle</key>
+        <key>HatToggle</key>
         <defaultValue>true</defaultValue>
         <caseTrue>
           <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="DF_Dusk_Hood"]/apparel/layers</xpath>
+            <xpath>Defs/ThingDef[defName="VCE_Apparel_WarmHat"]/apparel/layers</xpath>
             <value>
               <layers>
                 <li>EyeCover</li>
               </layers>
             </value>
           </Operation>
-        </caseTrue>
       </match>
       <nomatch Class="PatchOperationSequence" >
         <operations>
           <li Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="DF_Dusk_Cloak"]/apparel/layers</xpath>
+            <xpath>Defs/ThingDef[defName="VCE_Apparel_WarmJacket"]/apparel/layers</xpath>
             <value>
               <layers>
                 <li>Cape</li>
@@ -32,7 +31,7 @@
           </li>
 
           <li Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="DF_Dusk_Cloak"]/apparel</xpath>
+            <xpath>Defs/ThingDef[defName="VCE_Apparel_WarmJacket"]/apparel</xpath>
             <value>
               <drawData>
                 <dataNorth>

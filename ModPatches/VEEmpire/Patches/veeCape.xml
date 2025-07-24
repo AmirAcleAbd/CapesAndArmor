@@ -1,56 +1,69 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/ThingDef[defName="VFE_Apparel_StellicRobe"]/apparel/layers</xpath>
-      <value>
-        <layers>
-          <li>Cape</li>
-          <li>Armor_Cape</li>
-        </layers>
-      </value>
-    </Operation>
+  <Operation Class="PatchOperationFindMod" > 
+      <mods>
+        <li>XML Extensions</li>
+      </mods>
+      <match Class="PatchOperationSequence" >
+        <operations>
+        </operations>
+      </match>
+      <nomatch Class="PatchOperationSequence" >
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="VFE_Apparel_StellicRobe"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+              </layers>
+            </value>
+          </li>
 
-    <Operation Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName="VFE_Apparel_StellicRobe"]/apparel</xpath>
-      <value>
-        <drawData>
-          <dataNorth>
-            <layer>90</layer>
-          </dataNorth>
-        </drawData>
-      </value>
-    </Operation>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VFE_Apparel_StellicRobe"]/apparel</xpath>
+            <value>
+              <drawData>
+                <dataNorth>
+                  <layer>90</layer>
+                </dataNorth>
+              </drawData>
+            </value>
+          </li>
 
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/apparel/layers</xpath>
-      <value>
-        <layers>
-          <li>Cape</li>
-          <li>Armor_Cape</li>
-        </layers>
-      </value>
-    </Operation>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+              </layers>
+            </value>
+          </li>
 
-    <Operation Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/apparel</xpath>
-      <value>
-        <drawData>
-          <dataNorth>
-            <layer>90</layer>
-          </dataNorth>
-        </drawData>
-      </value>
-    </Operation>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VFEE_Apparel_JanissaryCuirass"]/apparel</xpath>
+            <value>
+              <drawData>
+                <dataNorth>
+                  <layer>90</layer>
+                </dataNorth>
+              </drawData>
+            </value>
+          </li>
 
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/apparel/layers</xpath>
-      <value>
-        <layers>
-          <li>Middle</li>
-          <li>Shell</li>
-          <li>Cape</li>
-          <li>Armor_Cape</li>
-        </layers>
-      </value>
-    </Operation>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="VFEE_Apparel_ArmorDeserter"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+              </layers>
+            </value>
+          </li>
+        </operations>
+      </nomatch>
+  </Operation>
 </Patch>

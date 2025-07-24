@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod" > 
+      <mods>
+        <li>XML Extensions</li>
+      </mods>
+      <match Class="XmlExtensions.OptionalPatch">
+        <modId>Yy.CapesandArmor</modId>
+        <key>HoodToggle</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+          <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DevDesigner_Blood_Apparel_Hood"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>EyeCover</li>
+              </layers>
+            </value>
+          </Operation>
+        </caseTrue>
+      </match>
+      <nomatch Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="DevDesigner_Blood_Apparel_Hood"]/apparel/layers</xpath>
+        <value>
+          <layers>
+            <li>EyeCover</li>
+          </layers>
+        </value>
+      </nomatch>
+  </Operation>
+</Patch>

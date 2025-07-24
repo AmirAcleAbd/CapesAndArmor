@@ -1,44 +1,95 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/ThingDef[defName="DankPyon_Apparel_LindwurmCloak"]/apparel/layers</xpath>
-      <value>
-        <layers>
-          <li>Cape</li>
-          <li>Armor_Cape</li>
-        </layers>
-      </value>
-    </Operation>
+  <Operation Class="PatchOperationFindMod" > 
+      <mods>
+        <li>XML Extensions</li>
+      </mods>
+      <match Class="XmlExtensions.OptionalPatch">
+        <modId>Yy.CapesandArmor</modId>
+        <key>HoodToggle</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+          <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="DankPyon_WolfHoodBase"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>EyeCover</li>
+              </layers>
+            </value>
+          </Operation>
 
-    <Operation Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName="DankPyon_Apparel_LindwurmCloak"]/apparel</xpath>
-      <value>
-        <drawData>
-          <dataNorth>
-            <layer>90</layer>
-          </dataNorth>
-        </drawData>
-      </value>
-    </Operation>
+          <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="DankPyon_BearHoodBase"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>EyeCover</li>
+              </layers>
+            </value>
+          </Operation>
 
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/ThingDef[defName="DankPyon_Apparel_FurCloak"]/apparel/layers</xpath>
-      <value>
-        <layers>
-          <li>Cape</li>
-          <li>Armor_Cape</li>
-        </layers>
-      </value>
-    </Operation>
+          <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DankPyon_Headgear_Hood"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>EyeCover</li>
+              </layers>
+            </value>
+          </Operation>
 
-    <Operation Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName="DankPyon_Apparel_FurCloak"]/apparel</xpath>
-      <value>
-        <drawData>
-          <dataNorth>
-            <layer>90</layer>
-          </dataNorth>
-        </drawData>
-      </value>
-    </Operation>
+          <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DankPyon_Headgear_RedBandana"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>EyeCover</li>
+              </layers>
+            </value>
+          </Operation>
+        </caseTrue>
+      </match>
+      <nomatch Class="PatchOperationSequence" >
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DankPyon_Apparel_LindwurmCloak"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+              </layers>
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="DankPyon_Apparel_LindwurmCloak"]/apparel</xpath>
+            <value>
+              <drawData>
+                <dataNorth>
+                  <layer>90</layer>
+                </dataNorth>
+              </drawData>
+            </value>
+          </li>
+
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DankPyon_Apparel_FurCloak"]/apparel/layers</xpath>
+            <value>
+              <layers>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+              </layers>
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="DankPyon_Apparel_FurCloak"]/apparel</xpath>
+            <value>
+              <drawData>
+                <dataNorth>
+                  <layer>90</layer>
+                </dataNorth>
+              </drawData>
+            </value>
+          </li>
+        </operations>
+      </nomatch>
+  </Operation>
 </Patch>

@@ -21,42 +21,57 @@
         </value>
       </Operation>
 
-      <Operation Class="PatchOperationAdd" IfModActive="Ludeon.Rimworld.Royalty">
-        <xpath>Defs/ThingDef[defName="Apparel_ArmorMarineHelmetPrestige"]/apparel</xpath>
-        <value>
-          <layers>
-            <li>Overhead</li>
-            <li>EyeCover</li>
-          </layers>
-        </value>
-      </Operation>
-
-      <Operation Class="PatchOperationAdd" IfModActive="Ludeon.Rimworld.Biotech">
-        <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetMechanitorBase"]</xpath>
-        <value>
-          <apparel>
-            <bodyPartGroups>
-              <li>FullHead</li>
-            </bodyPartGroups>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Apparel_ArmorMarineHelmetPrestige"]/apparel</xpath>
+          <value>
             <layers>
+              <li>Overhead</li>
               <li>EyeCover</li>
             </layers>
-            <defaultOutfitTags>
-              <li>Soldier</li>
-            </defaultOutfitTags>
-            <useDeflectMetalEffect>true</useDeflectMetalEffect>
-          </apparel>
-        </value>
+          </value>
+        </match>
       </Operation>
 
-      <Operation Class="PatchOperationReplace" IfModActive="Ludeon.Rimworld.Anomaly">
-        <xpath>Defs/ThingDef[defName="Apparel_CeremonialCultistMask"]/apparel/layers</xpath>
-        <value>
-          <layers>
-            <li>Overhead</li>
-            <li>EyeCover</li>
-          </layers>
-        </value>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Biotech</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="ApparelArmorHelmetMechanitorBase"]</xpath>
+          <value>
+            <apparel>
+              <bodyPartGroups>
+                <li>FullHead</li>
+              </bodyPartGroups>
+              <layers>
+                <li>EyeCover</li>
+              </layers>
+              <defaultOutfitTags>
+                <li>Soldier</li>
+              </defaultOutfitTags>
+              <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            </apparel>
+          </value>
+        </match>
+      </Operation>
+
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Anomaly</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Apparel_CeremonialCultistMask"]/apparel/layers</xpath>
+          <value>
+            <layers>
+              <li>Overhead</li>
+              <li>EyeCover</li>
+            </layers>
+          </value>
+        </match>
       </Operation>
     </caseTrue>
     <caseFalse>

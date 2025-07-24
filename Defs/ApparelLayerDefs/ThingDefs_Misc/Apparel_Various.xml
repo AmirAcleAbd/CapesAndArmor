@@ -2,7 +2,7 @@
   <ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
     <defName>Apparel_LargeCape</defName>
     <label>Large cape</label>
-    <description>Cape sized for large armors like cataphract, prestige marine and grendaier.</description>
+    <description>Cape sized for large armors like cataphract, prestige marine and grenadier.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/Cape/Cape</texPath>
