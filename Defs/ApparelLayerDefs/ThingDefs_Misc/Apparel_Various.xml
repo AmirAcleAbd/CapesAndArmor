@@ -53,10 +53,7 @@
         </dataNorth>
       </drawData>
       <tags>
-        <li>Cape</li>
-        <li>Royal</li>
-        <li>RoyalTier2</li>
-        <li>RoyalTier5</li>
+        <li>FittedArmorCape</li>
       </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -125,10 +122,7 @@
         </dataNorth>
       </drawData>
       <tags>
-        <li>Cape</li>
-        <li>Royal</li>
-        <li>RoyalTier2</li>
-        <li>RoyalTier5</li>
+        <li>FittedArmorCape</li>
       </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -189,10 +183,7 @@
         </dataNorth>
       </drawData>
       <tags>
-        <li>Cape</li>
-        <li>Royal</li>
-        <li>RoyalTier2</li>
-        <li>RoyalTier5</li>
+        <li>FittedArmorCape</li>
       </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
