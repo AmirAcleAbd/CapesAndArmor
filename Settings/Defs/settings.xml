@@ -43,6 +43,12 @@
                 <defaultValue>true</defaultValue>
                 <tooltip>Gunlink over helmets, like hoods </tooltip>
             </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>FlakToggle</key>
+                <label>FlakHelmet</label>
+                <defaultValue>true</defaultValue>
+                <tooltip>Flak Helmet same layer as hoods, can go over marine helmets </tooltip>
+            </li>
 
             <li Class="XmlExtensions.Setting.Checkbox">
                 <key>LocustToggle</key>

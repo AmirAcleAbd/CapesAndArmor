@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Royalty</li>
+        </mods>
+        <match Class="XmlExtensions.OptionalPatch">
+            <modId>Yy.CapesandArmor</modId>
+            <key>FlakToggle</key>
+            <defaultValue>true</defaultValue>
+            <caseTrue>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]/apparel/layers</xpath>
+                    <value>  
+                        <layers>
+                            <li>EyeCover</li>
+                        </layers>
+                    </value>
+                </Operation>
+            </caseTrue>
+        </match>
+    </Operation>
+</Patch>

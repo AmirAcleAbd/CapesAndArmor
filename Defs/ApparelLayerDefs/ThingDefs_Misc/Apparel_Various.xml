@@ -1,5 +1,5 @@
 <Defs>  
-  <ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+  <ThingDef ParentName="ApparelMakeableBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_LargeCape</defName>
     <label>Large cape</label>
     <description>Cape sized for large armors like cataphract, prestige marine and grenadier.</description>
@@ -49,7 +49,7 @@
       </layers>
       <drawData>
         <dataNorth>
-          <layer>90</layer>
+          <layer>52</layer>
         </dataNorth>
       </drawData>
       <tags>
@@ -65,7 +65,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+  <ThingDef ParentName="ApparelMakeableBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_LargePrestigeCape</defName>
     <label>Prestige cape</label>
     <description>Cape sized for the bulkiest armors like Prestige Cataphract and Phoenix power armor .</description>
@@ -121,7 +121,7 @@
       </layers>
       <drawData>
         <dataNorth>
-          <layer>90</layer>
+          <layer>52</layer>
         </dataNorth>
       </drawData>
       <tags>
@@ -137,7 +137,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+  <ThingDef ParentName="ApparelMakeableBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_LocustCape</defName>
     <label>Locust cape</label>
     <description>Fitted cape sized to fit over Locust Armor.</description>
@@ -185,7 +185,7 @@
       </layers>
       <drawData>
         <dataNorth>
-          <layer>90</layer>
+          <layer>52</layer>
         </dataNorth>
       </drawData>
       <tags>

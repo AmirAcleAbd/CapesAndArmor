@@ -2,8 +2,7 @@
 <loadFolders>
 	<v1.5>
 		<li>/</li>
-		<li IfModActive="imranfish.xmlextensions">Settings</li>
-		<li IfModNotActive="imranfish.xmlextensions">Default</li>	
+		<li IfModActive="imranfish.xmlextensions">Settings</li>	
 
 		<li IfModActive="Harkon.DF.Dusk">ModPatches/DuskArmory</li>
 		<li IfModActive="CaptainCrunch.CrunchArmorTweaks">ModPatches/CrunchTweaks</li>
