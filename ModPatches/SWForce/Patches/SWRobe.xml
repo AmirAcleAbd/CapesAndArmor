@@ -29,7 +29,7 @@
                 <li>Armor_Cape</li>
               </layers>
             </value>
-          </Operation>
+          </li>
 
 
           <li Class="PatchOperationAdd">
