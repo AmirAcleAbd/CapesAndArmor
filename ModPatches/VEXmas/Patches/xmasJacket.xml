@@ -17,6 +17,7 @@
               </layers>
             </value>
           </Operation>
+        </caseTrue>
       </match>
       <nomatch Class="PatchOperationSequence" >
         <operations>
